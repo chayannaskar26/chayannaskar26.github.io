@@ -1,0 +1,108 @@
+h1, h2, h3, h4, h5, h6 {
+    color: #333333;
+}
+.my-20 {
+    margin: 20px 0 20px 0;
+}
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #727272;
+}
+.aside-header {
+    width: 310px;
+    float: left;
+    position: fixed;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+.aside-header h1 {
+    color: #3ab4fa;
+}
+.font-size-14 {
+    font-size: 14px;
+}
+.aside-header .photo {
+    height: 240px;
+    width: 240px;
+    overflow: hidden;
+    background: #e97119;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.aside-header .photo img{
+    height: 240px;
+}
+.aside-header .follow span {
+    display: block;
+    color: #3ab4fa;
+    margin-bottom: 6px;
+}
+.aside-header .follow a {
+    color: #333333;
+    font-size: 22px;
+    margin-right: 12px;
+}
+.projects {
+    width: 600px;
+    float: right;
+    padding-bottom: 50px;
+}
+.projects .first-item {
+    margin-top: 0;
+}
+.tech-used {
+    margin-bottom: 30px;
+}
+.tech-used img {
+    height: 22px;
+}
+.project-img {
+    position: relative;
+    cursor: pointer;
+}
+.project-img .hover-links {
+    display: none;
+    position: absolute;
+    background: #ffffffbb;
+    height: 60px;
+    width: 200px;
+    text-align: center;
+    border-radius: 8px;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.project-img .hover-links a {
+    text-decoration: none;
+    color: #333333;
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+    margin: 9px;
+}
+.project-img .hover-links a i {
+    font-size: 20px;
+}
+.project-img .hover-links a:hover {
+    color: #3ab4fa;
+}
+.project-img:hover .hover-links {
+    display: block;
+}
+.steam-games-recommender .project-img {
+    background-image: url('../images/steam-game-recommender.png');
+    background-size: cover;
+    width: 600px;
+    height: 356px;
+}
+.view-code {
+    text-decoration: none;
+    color: rgb(23, 120, 247);
+    font-size: 14px;
+}
+.view-code:hover {
+    font-weight: 600;
+}
