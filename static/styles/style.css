@@ -5,15 +5,13 @@ h1, h2, h3, h4, h5, h6 {
     margin: 20px 0 20px 0;
 }
 .wrapper {
-    width: 960px;
     margin: 0 auto;
     font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #727272;
 }
 .aside-header {
-    width: 310px;
-    float: left;
-    position: fixed;
+    width: 90vw;
+    margin: 0 auto;
     -webkit-font-smoothing: subpixel-antialiased;
 }
 .aside-header h1 {
@@ -23,15 +21,15 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 14px;
 }
 .aside-header .photo {
-    height: 240px;
-    width: 240px;
+    height: 180px;
+    width: 180px;
     overflow: hidden;
     background: #e97119;
     border-radius: 50%;
     margin: 0 auto;
 }
 .aside-header .photo img{
-    height: 240px;
+    height: 180px;
 }
 .aside-header .follow span {
     display: block;
@@ -43,9 +41,12 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 22px;
     margin-right: 12px;
 }
+.aside-header .follow a:hover {
+    color: #3ab4fa;
+}
 .projects {
-    width: 600px;
-    float: right;
+    width: 90vw;
+    margin: 0 auto;
     padding-bottom: 50px;
 }
 .projects .first-item {
@@ -56,6 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .tech-used img {
     height: 22px;
+    margin-right: 12px;
 }
 .project-img {
     position: relative;
@@ -89,14 +91,11 @@ h1, h2, h3, h4, h5, h6 {
 .project-img .hover-links a:hover {
     color: #3ab4fa;
 }
-.project-img:hover .hover-links {
-    display: block;
-}
 .steam-games-recommender .project-img {
     background-image: url('../images/steam-game-recommender.png');
     background-size: cover;
-    width: 600px;
-    height: 356px;
+    width: 90vw;
+    height: calc(100vw / 2)
 }
 .view-code {
     text-decoration: none;
@@ -105,4 +104,39 @@ h1, h2, h3, h4, h5, h6 {
 }
 .view-code:hover {
     font-weight: 600;
+}
+.mobile-links {
+    display: flex;
+    justify-content: space-between;
+}
+@media (min-width: 992px) {
+    .wrapper {
+        width: 960px;
+    }
+    .aside-header {
+        width: 310px;
+        float: left;
+        position: fixed;
+    }
+    .projects {
+        width: 600px;
+        float: right;
+    }
+    .steam-games-recommender .project-img {
+        width: 600px;
+        height: 356px;
+    }
+    .aside-header .photo {
+        height: 240px;
+        width: 240px;
+    }
+    .aside-header .photo img {
+        height: 240px;
+    }
+    .project-img:hover .hover-links {
+        display: block;
+    }
+    .d-lg-none {
+        display: none;
+    }
 }
